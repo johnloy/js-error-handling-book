@@ -1,5 +1,7 @@
 # js-error-handling-book
 
+Yes!
+
 ![test][image-1]
 
 ---- 

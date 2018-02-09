@@ -1,0 +1,6 @@
+[Settings]
+  ID = "15dbf41d-22c1-41a7-ae2b-2adf0a07922d"
+
+[Build]
+  publish = "dist"
+  command = "yarn build"
