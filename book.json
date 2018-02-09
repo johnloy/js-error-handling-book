@@ -1,0 +1,4 @@
+{
+    "root": "./src",
+    "structure.readme": "./src/README.md"
+}
