@@ -1,0 +1,1 @@
+# Error handling paradigms and schools of thought
