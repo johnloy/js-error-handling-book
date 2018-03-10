@@ -16,13 +16,13 @@ That last sentence was facetious, in case it wasn’t obvious.
 
 Run a few quick web searches, on Google, Bing, StackOverflow, etc. and you’ll discover an unfortunate state of affairs.
 
-    “javascript error handling best practices”
+- _“javascript error handling best practices”_
 
-    “javascript exception handling”
+- _“javascript exception handling”_
 
-    “javascript error handling web applications”
+- _“javascript error handling web applications”_
 
-    “node error handling”
+- _“node error handling”_
 
 The bulk of what shows in the first couple pages of results invariably deals with how to use try…catch and the global browser window.onerror handler or `error` event listener. No big surprise, as these are fundamental. If you searched using Google, you’ll most likely also see ads for error monitoring services at the top of the results.
 
@@ -68,8 +68,18 @@ But, it’s all good. Error handling is a perennial problem that cuts across web
 
 You are here, reading this book, so no doubt you’ve already experienced that realization. You now understand that failure is, in fact, a feature.
 
+----
 
-Despite my criticism of what can be found through simple web searches, if you choose your search terms well and dig a little through the results, you actually will find several high quality error handling guides. Some of the best I’ve discovered include:
+[^1]:	Despite my criticism of what can be found through web searches, if you choose your search terms well and dig a little through the results, you actually will find several high quality error handling guides, albeit limited in their scope. Some of the best I’ve discovered include:
 
+- [Eloquent JavaScript, Ch. 8: Bugs and error handling](http://eloquentjavascript.net/08_error.html)
+- [Robust client-side JavaScript](https://molily.de/robust-javascript/)
+- [Error Handling in Node.js](https://www.joyent.com/node-js/production/design/errors)
+- [Javascript Errors Handbook](https://github.com/mknichel/javascript-errors)
+- [What went wrong? Troubleshooting JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_went_wrong)
 
-[^1]:	Blah blah
+And, of course, RTFM:
+
+- [Control flow and error handling](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
+- [Javascript error reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors)
+- [Node.js Errors documentation](https://nodejs.org/api/errors.html)
