@@ -1,6 +1,6 @@
 # Table of Contents
 
-* [Introduction][1]
+* [Preface][1]
 * [Part 1: The value of thoughtful and thorough error handling][2]
 	* [Chapter 1:  What exactly is an error?][3]
 	* [Chapter 2: Errors vs. exceptions vs. maybe bad][4]
@@ -31,7 +31,7 @@
 	* 
 * [Part 5: Complementary concepts and techniques][29]
 
-[1]:	README.md
+[1]:	preface.md
 [2]:	part-1/0-intro.md
 [3]:	part-1/chapter-1/0-what-exactly-is-an-error.md
 [4]:	part-1/chapter-2/0-errors-vs-exceptions-vs-maybe-bad.md

@@ -1,1 +1,2 @@
-# Error handling for web and JavaScript applications
+# Failure is a Feature: Error Handling for JavaScript Web Applications
+
