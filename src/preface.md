@@ -72,14 +72,14 @@ You are here, reading this book, so no doubt you’ve already experienced that r
 
 [^1]:	Despite my criticism of what can be found through web searches, if you choose your search terms well and dig a little through the results, you actually will find several high quality error handling guides, albeit limited in their scope. Some of the best I’ve discovered include:
 
-- [Eloquent JavaScript, Ch. 8: Bugs and error handling](http://eloquentjavascript.net/08_error.html)
-- [Robust client-side JavaScript](https://molily.de/robust-javascript/)
-- [Error Handling in Node.js](https://www.joyent.com/node-js/production/design/errors)
-- [Javascript Errors Handbook](https://github.com/mknichel/javascript-errors)
-- [What went wrong? Troubleshooting JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_went_wrong)
+    - [Eloquent JavaScript, Ch. 8: Bugs and error handling](http://eloquentjavascript.net/08_error.html)
+    - [Robust client-side JavaScript](https://molily.de/robust-javascript/)
+    - [Error Handling in Node.js](https://www.joyent.com/node-js/production/design/errors)
+    - [Javascript Errors Handbook](https://github.com/mknichel/javascript-errors)
+    - [What went wrong? Troubleshooting JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_went_wrong)
 
-And, of course, RTFM:
+    And, of course, RTFM:
 
-- [Control flow and error handling](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
-- [Javascript error reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors)
-- [Node.js Errors documentation](https://nodejs.org/api/errors.html)
+    - [Control flow and error handling](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
+    - [Javascript error reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors)
+    - [Node.js Errors documentation](https://nodejs.org/api/errors.html)
