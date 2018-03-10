@@ -62,11 +62,11 @@ It’s a missing resource, actually. While hundreds of print and online books ex
 
 Error handling isn’t exciting or “sexy”, and it never will be. In the minds of designers, developers, app producers, and users, features are most interesting and what matter. “Happy paths” are what people pay for and get paid for, and they ostensibly make or break an app. Cookbook-style books reign supreme for web app developers, because that demographic just wants a stronger grasp of the reigns to their adopted (or inherited) JavaScript framework/tooling/stack to get the job (features) done. Error handling seems just a side note while trying to explain how to build an app with the MEAN stack, or React, or Vue, or Express, or whatever.
 
-To web app developers, there will also always be more enticing matters consuming their time and attention, like the newest hotness in JavaScript frameworks, libraries, ES.next features, browser APIs, and juicy matters of community debate (“Should we start writing CSS in JavaScript?”).
+To web app developers, there will also always be more enticing matters consuming their time and attention, like the newest hotness in JavaScript frameworks, libraries, ES.next features, browser APIs, and juicy threads of community debate (“Should we start writing CSS in JavaScript?”).
 
-But, it’s all good. Error handling is a perennial problem that cuts across web app projects everywhere, regardless of stack, so somewhere along the journey to enlightenment of every JavaScript web app developer patiently waits the realization of its importance.
+But, it’s all good. Error handling is a perennial problem that cuts across web app projects everywhere, regardless of stack, so somewhere along the journey to enlightenment of every JavaScript web app developer patiently awaits the realization of its importance.
 
-You are here, reading this book, so no doubt you’ve already experienced that realization. You now understand that failure is, in fact, a feature.
+You are here, reading this book, so no doubt you’ve already experienced that realization. You understand that failure is, in fact, a feature.
 
 ----
 
