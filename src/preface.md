@@ -56,7 +56,7 @@ Consider:
 
 - After an app goes into production is far too late to become aware of most errors, let alone handle them for the sake of the hapless users forced to serve as your unpaid QA staff. Ideally, steps would be taken long before release to prevent errors in the first place.
 
-These represent only a small sample of the challenges and considerations besetting attempts to realize comprehensive error handling in a web app. Engaging the larger realm of these demands plunging deeply into a broad range of wonky technical minutiae, not all of which, of course, will be relevant for every app. Still, if you hope to master the subject, a web search will only get you started [^1]. This book is meant to take you all the way.
+These represent only a small sample of the challenges and considerations besetting attempts to realize comprehensive error handling in a web app. Engaging the larger realm of these demands plunging deeply into a broad range of wonky technical minutiae, not all of which, of course, will be relevant for every app. Still, if you hope to master the subject, a web search will only get you started <sup><a href="#resources">1</a></sup>. This book is meant to take you all the way.
 
 It’s a missing resource, actually. While hundreds of print and online books exist  about JavaScript, web development, and Node.js, there aren’t any others (yet) entirely devoted to error handling (at least that I’m aware of) that treat the subject with deserved thoroughness and connect all the dots. The likely reasons are easy to guess.
 
@@ -70,7 +70,8 @@ You are here, reading this book, so no doubt you’ve already experienced that r
 
 ----
 
-[^1]:	Despite my criticism of what can be found through web searches, if you choose your search terms well and dig a little through the results, you actually will find several high quality error handling guides, albeit limited in their scope. Some of the best I’ve discovered include:
+<a name="resources"></a>
+<sup>1</sup> Despite my criticism of what can be found through web searches, if you choose your search terms well and dig a little through the results, you actually will find several high quality error handling guides, albeit limited in their scope. Some of the best I’ve discovered include:
 
     - [Eloquent JavaScript, Ch. 8: Bugs and error handling](http://eloquentjavascript.net/08_error.html)
     - [Robust client-side JavaScript](https://molily.de/robust-javascript/)
