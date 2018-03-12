@@ -60,7 +60,7 @@ These represent only a small sample of the challenges and considerations besetti
 
 It’s a missing resource, actually. While hundreds of print and online books exist about JavaScript, web development, and Node.js, there aren’t any others (yet) entirely devoted to error handling <sup><a href="#fn-other-books">2</a></sup> that treat the subject with deserved thoroughness. The likely reasons are easy to guess.
 
-Error handling isn’t exciting or “sexy”, and it never will be. In the minds of designers, developers, app producers, and users, features are most interesting and what matter. “Happy paths” are what people pay for and get paid for, and they ostensibly make or break an app. To web app developers, there will also always be meatier matters attracting their time and attention, like the newest hotness in JavaScript frameworks, libraries, ES.next features, browser APIs, and contentious threads of community debate (“Should we start writing CSS in JavaScript?”).
+Error handling isn’t exciting or “sexy”, and it never will be. In the minds of designers, developers, app producers, and users, features are most interesting and what matter. “Happy paths” are what people pay for and get paid for, and they ostensibly make or break an app. To web app developers, there will also always be meatier matters attracting their time and attention, like the newest hotness in JavaScript frameworks, libraries, ES.next features, browser APIs, and contentious threads of community debate (“Should we be writing CSS in JavaScript?”).
 
 Cookbook-style books are what sell for web app developers, because they're a fast means to wrangle an app's JavaScript framework/tooling/stack and get the job (features) done. What sells is worth the time of authors and publishers. Error handling can seem like only a peripheral concern when trying to explain how to build an app with, React, or the MEAN stack, or Vue, or Express, or whatever.
 
@@ -78,7 +78,7 @@ It’s all good, though. Error handling is a perennial problem that cuts across 
 - [Javascript Errors Handbook](https://github.com/mknichel/javascript-errors)
 - [What went wrong? Troubleshooting JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_went_wrong)
 
-And, of course, RTFM:
+And, of course, the "docs":
 
 - [Control flow and error handling](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
 - [Javascript error reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors)
