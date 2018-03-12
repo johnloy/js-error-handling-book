@@ -1,18 +1,18 @@
 # Preface
 
-The web is an exceptionally hostile platform for software, JavaScript software to be precise, as for better or worse JavaScript is the primary programming language of the web.  There exist more ways non-trivial JavaScript web apps could potentially fail than can practically be anticipated, thanks to their runtime environment and logic being fragmented across and dependent upon so many different flavors and versions of operating systems, browsers, servers, networks, hardware, worker tasks, files of code, and APIs “front” end and “back” end.
+The web is an exceptionally hostile platform for software, JavaScript software to be precise, as for better or worse JavaScript is the primary programming language of the web.  There likely exist more ways non-trivial JavaScript web apps could potentially fail than can be practically anticipated, thanks to the runtime environment and logic being fragmented across and dependent upon so many different flavors and versions of operating systems, browsers, servers, networks, hardware, worker tasks, files of code, and APIs “front” end and “back” end.
 
-The situation resembles a game of telephone played by hundreds of participants speaking a variety of languages, communicating through filters and biases coloring what they hear, and who occasionally fall asleep or jump the gun mid-game.
+The situation resembles a game of telephone played by hundreds of participants speaking a variety of languages and dialects, communicating through filters and biases coloring what they hear, and who occasionally fall asleep or jump the gun mid-game.
 
-In other words, it’s not a question of if order and predictability will break down, but of when and how, and how badly.
+In other words, it’s not a question of if a break down will occur, but of when and how, and how badly.
 
-Yet, in the face of such nebulous inevitable catastrophe, failure needs to be anticipated and “handled” (whatever that means) if there’s reputation, money, public safety, or the threat of legal jeopardy riding on the success of a web app. 
+Still, in the face of such vague inevitable catastrophe, failure needs to be anticipated and “handled” (whatever that means) if there’s reputation, money, public safety, or the threat of legal jeopardy riding on the success of a web app. 
 
 Right?
 
 That’s why, naturally, robust error handling and defensive coding are enduring hot topics in the JavaScript web app development community, why these practices are so widely understood and pursued, and why there’s so much thought and technical innovation applied to them.
 
-That last sentence was facetious, in case it wasn’t obvious.
+Not so much.
 
 Run a few quick web searches, on Google, Bing, StackOverflow, etc. and you’ll discover an unfortunate state of affairs.
 
@@ -26,7 +26,7 @@ Run a few quick web searches, on Google, Bing, StackOverflow, etc. and you’ll 
 
 The bulk of what shows in the first couple pages of results invariably deals with how to use try…catch and the global browser window.onerror handler or `error` event listener. No big surprise, as these are fundamental. If you searched using Google, you’ll most likely also see ads for error monitoring services at the top of the results.
 
-Sizing up the matter from these results can easily leave someone who’s never given much thought to JavaScript error handling with a very narrow perspective on the scope of what’s really involved in doing it effectively.  It could seem like error handling requires not much more than wrapping a few potentially problematic code operations in a try…catch, like maybe ones depending on data from remote api calls, and then putting an app on cruise control with an error monitoring service to surface unanticipated errors in production.
+Sizing up the matter from these results can easily leave someone who’s never given much thought to JavaScript error handling with a very narrow perspective on the scope of what’s really involved in doing it effectively.  It could seem like error handling requires not much more than wrapping a few potentially problematic code operations in a try…catch, like maybe ones depending on data from remote api calls, and then putting an app on cruise control with an error monitoring service to tease out unanticipated errors in production.
 
 Anybody who’s written a complex web application used by a sizable audience knows this doesn’t begin to cut it.
 
@@ -52,26 +52,25 @@ Consider:
 
 - Modern web applications rely heavily on asynchronous (“async” to the cool kids) code flows, such as those using XMLHttpRequest and Fetch to make resource requests over the network. This means employing a range of async control flow mechanisms, including callbacks, promises, event emitters, generators, async/await, streams, and observables, which each require slightly different error handling approaches. Humble try…catch won’t suffice for most of these, as its semantics are synchronous.
 
-- With the advent of compiled and minified client side JavaScript bundles generated by tools like Webpack and Uglify, and the intermingling of Node and browser APIs and code libraries for JavaScript app development, web app error handling has grown orders of magnitude more complex than in the halcyon days of jQuery’s dominance. Abstractions (frameworks, libraries, JS dialects), competing module systems (AMD, CommonJS, EcmaScript), obfuscations (transpiling, minification), idiosyncratic coding styles of Jane or Joe package developer (OOP, functional, declarative, fluid), and tooling that practically requires a CS Ph.D. to grok (webpack, AST parsers, compilers), combine to form a daunting level of what legendary computer scientist Fred Brooks termed “accidental complexity”. If you can’t understand everything happening in your code, how can you effectively guard against errors?
+- With the advent of compiled and minified client side JavaScript bundles generated by tools like Webpack and Uglify, and the intermingling of Node and browser APIs and code libraries for JavaScript app development, web app error handling has grown orders of magnitude more complex than in the halcyon days of jQuery’s dominance. Abstractions (frameworks, libraries, JS dialects), competing module systems (AMD, CommonJS, EcmaScript), obfuscations (transpiling, minification), idiosyncratic coding styles of Jane or Joe package developer (OOP, functional, declarative, fluid), and tooling that practically requires a CS Ph.D. to grok (webpack, AST parsers, compilers), combine to form a daunting level of what computer scientist Fred Brooks termed “accidental complexity”. If you can’t understand everything happening in your code, how can you effectively guard against errors?
 
 - After an app goes into production is far too late to become aware of most errors, let alone handle them for the sake of the hapless users forced to serve as your unpaid QA staff. Ideally, steps would be taken long before release to prevent errors in the first place.
 
-These represent only a small sample of the challenges and considerations besetting attempts to realize comprehensive error handling in a web app. Engaging the larger realm of these demands plunging deeply into a broad range of wonky technical minutiae, not all of which, of course, will be relevant for every app. Still, if you hope to master the subject, a web search will only get you started <sup><a href="#fn-resources">1</a></sup>. This book is meant to take you all the way.
+These represent only a small sample of the challenges and considerations besetting attempts to realize comprehensive error handling in a web app. Tackling the larger realm of these demands plunging deeply into a broad range of wonky technical minutiae, not all of which, of course, will be relevant for every app. If you hope to master the subject, a web search will only get you started <sup><a href="#fn-resources">1</a></sup>. This book is meant to take you all the way.
 
-It’s a missing resource, actually. While hundreds of print and online books exist  about JavaScript, web development, and Node.js, there aren’t any others (yet) entirely devoted to error handling (at least that I’m aware of) that treat the subject with deserved thoroughness and connect all the dots. The likely reasons are easy to guess.
+It’s a missing resource, actually. While hundreds of print and online books exist about JavaScript, web development, and Node.js, there aren’t any others (yet) entirely devoted to error handling <sup><a href="#fn-other-books">2</a></sup> that treat the subject with deserved thoroughness. The likely reasons are easy to guess.
 
-Error handling isn’t exciting or “sexy”, and it never will be. In the minds of designers, developers, app producers, and users, features are most interesting and what matter. “Happy paths” are what people pay for and get paid for, and they ostensibly make or break an app. Cookbook-style books reign supreme for web app developers, because that demographic just wants a stronger grasp of the reigns to their adopted (or inherited) JavaScript framework/tooling/stack to get the job (features) done. Error handling seems just a side note while trying to explain how to build an app with the MEAN stack, or React, or Vue, or Express, or whatever.
+Error handling isn’t exciting or “sexy”, and it never will be. In the minds of designers, developers, app producers, and users, features are most interesting and what matter. “Happy paths” are what people pay for and get paid for, and they ostensibly make or break an app. To web app developers, there will also always be meatier matters attracting their time and attention, like the newest hotness in JavaScript frameworks, libraries, ES.next features, browser APIs, and contentious threads of community debate (“Should we start writing CSS in JavaScript?”).
 
-To web app developers, there will also always be more enticing matters consuming their time and attention, like the newest hotness in JavaScript frameworks, libraries, ES.next features, browser APIs, and juicy threads of community debate (“Should we start writing CSS in JavaScript?”).
+Cookbook-style books are what sell for web app developers, because they're a fast means to wrangle an app's JavaScript framework/tooling/stack and get the job (features) done. What sells is worth the time of authors and publishers. Error handling can seem like only a peripheral concern when trying to explain how to build an app with, React, or the MEAN stack, or Vue, or Express, or whatever.
 
-But, it’s all good. Error handling is a perennial problem that cuts across web app projects everywhere, regardless of stack, so somewhere along the journey to enlightenment of every JavaScript web app developer patiently awaits the realization of its importance.
-
-You are here, reading this book, so no doubt you’ve already experienced that realization. You understand that failure is, in fact, a feature.
+It’s all good, though. Error handling is a perennial problem that cuts across web app projects everywhere, regardless of stack, so somewhere along the journey to enlightenment of every JavaScript web app developer patiently awaits the realization that failure, well-planned failure, is in fact a feature. And this book, awaits them, no selling necessary.
 
 ----
 
+
 <a id="fn-resources"></a>
-<sup>1</sup> Despite my criticism of what can be found through web searches, if you choose your search terms well and dig a little through the results, you actually will find several high quality error handling guides, albeit limited in their scope. Some of the best I’ve discovered include:
+<sup>1</sup> Despite my criticism of what can be found through web searches, if you choose your search terms well and dig a little through the results, you actually will find several high quality error handling guides online, albeit limited in their scope. Some of the best I’ve discovered include:
 
 - [Eloquent JavaScript, Ch. 8: Bugs and error handling](http://eloquentjavascript.net/08_error.html)
 - [Robust client-side JavaScript](https://molily.de/robust-javascript/)
@@ -84,3 +83,6 @@ And, of course, RTFM:
 - [Control flow and error handling](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
 - [Javascript error reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors)
 - [Node.js Errors documentation](https://nodejs.org/api/errors.html)
+
+<a id="fn-resources"></a>
+<sup>2</sup> At least that I’m aware of. Correct me if I'm wrong!
