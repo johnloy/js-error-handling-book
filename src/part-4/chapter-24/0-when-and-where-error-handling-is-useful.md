@@ -1,0 +1,1 @@
+# When and where error handling is useful
