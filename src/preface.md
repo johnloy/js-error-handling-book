@@ -64,7 +64,7 @@ Error handling isn’t exciting or “sexy”, and it never will be. In the mind
 
 Books and articles devoted to particular frameworks, tooling, and stacks are what appeal most to web app developers, because they're a quick means to master the tools that get the job (features) done. Error handling can feel like only a peripheral concern when trying to explain how to build an app with, React, the MEAN stack, Vue, Express, or the latest shiny object captivating JS fandom.
 
-It’s all good, though. Error handling is actually a perennial concern that cuts across web app projects everywhere (software everywhere, really), regardless of stack. So, somewhere along the journey to enlightenment of every JavaScript web app developer patiently awaits the realization that failure, well-planned failure, is in fact a feature. And, this book awaits that important moment.
+It’s all good, though. Error handling is actually a perennial concern, and a surprisingly expansive one at that, which cuts across web app projects everywhere (software everywhere, really), regardless of stack. So, somewhere along the journey to enlightenment of every JavaScript web app developer patiently awaits the realization that failure, well-planned failure, is in fact a feature. And, this book awaits that important moment.
 
 ----
 
