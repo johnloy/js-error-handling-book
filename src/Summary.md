@@ -4,156 +4,100 @@
 
 ----
 
-* [Preface][1]
-* [Introduction][2]
-* [Part 1: The value of thoughtful and thorough error handling][3]
-	* [Ch 1: What exactly is an error?][4]
-	* [Ch 2: Errors vs. exceptions vs. maybe bad][5]
-	* [Ch 3: When an error is not an Error][6]
-	* [Ch 4: Error handling paradigms and schools of thought][7]
-	* [Ch 5: Good error handling aids user experience][8]
-	* [Ch 6: Good error handling aids developer experience][9]
-	* [Ch 7: Good error handling aids testing][10]
-	* [Ch 8: Good error handling enhances and protects reputation][11]
-* [Part 2: Error handling in the JavaScript language][12]
-	* [Ch 9: The Error constructor][13]
-	* [Ch 10: Built-in error constructors][14]
-	* [Ch 11: try…catch…finally][15]
-	* [Ch 12: The call stack][16]
-	* [Ch 13: The throw statement][17]
-	* [Ch 14: Stack traces][18]
-	* [Ch 15: Custom errors][19]
-	* [Ch 16: Async error handling][20]
-	* [Ch 17: Challenges and language design flaws][21]
-* [Part 3: Real world JavaScript error handling in browsers and Node.js][22]
-	* [Ch 18: Commonalities between browsers and Node.js][23]
-	* [Ch 19: Browser peculiarities][24]
-	* [Ch 20: Browser APIs][25]
-        * [Ecmascript modules][26]
-        * [Asset loading][27]
-        * [Events and messaging][28]
-        * [Task scheduling][29]
-        * [Window, Document, and Navigator][30]
-        * [Device][31]
-        * [DOM (HTML elements)][32]
-        * [HTML forms][33]
-        * [Web Components][34]
-        * [Stylesheets][35]
-        * [WebWorkers][36]
-        * [Service Workers and Progressive Web Apps (PWAs)][37]
-        * [Networking][38]
-        * [Client storage][39]
-        * [Data processing][40]
-        * [Graphics][41]
-        * [Video and audio][42]
-        * [Internationalization][43]
-        * [Performance][44]
-        * [Security][45]
-        * [WebAssembly][46]
-	* [Ch 21: Node peculiarities][47]
-	* [Ch 22: Node APIs][48]
-	* [Ch 23: HTTP][49]
-* [Part 4: Real world JavaScript error handling in web application architecture][50]
-	* [Ch 24: When and where error handling is useful][51]
-	* [Ch 25: Design and strategy][52]
-	* [Ch 26: Tactics][53]
-		* [Missing browser or Node.js feature support][54]
-		* [Faulty third-party packages][55]
-		* [Faulty third-party dynamic embeds][56]
-		* [Code API contract violations][57]
-		* [Race conditions][58]
-		* [Loss of network connectivity][59]
-		* [Request failure][60]
-		* [Asset load failure][61]
-		* [Critical failure during app loading][62]
-		* [UI component render failure][63]
-		* [No matching route][64]
-		* [Forbidden route][65]
-		* [Private browsing mode][66]
-		* [Realtime data inconsistency][67]
-		* [Too-aggressive caching][68]
-		* [Too-fast input][69]
-		* [Too-slow processing][70]
-		* [Client storage quota exceeded][71]
-	* [Ch 27: During development][72]
-	* [Ch 28: During automated testing][73]
-	* [Ch 29: During staging and QA][74]
-	* [Ch 30: During production][75]
-* [Part 5: Complementary concepts and techniques][76]
+* [Preface](preface.md)
+* [Introduction](introduction.md)
+* [Part 1: The value of thoughtful and thorough error handling](part-1/intro.md)
+	* [What exactly is an error?](part-1/what-exactly-is-an-error.md)
+	* [Errors vs. exceptions vs. maybe bad](part-1/errors-vs-exceptions-vs-maybe-bad.md)
+	* [When an error is not an Error](part-1/when-an-error-is-not-an-error.md)
+	* [Error handling paradigms and schools of thought](part-1/error-handling-paradigms-and-schools-of-thought.md)
+	* [Good error handling aids user experience](part-1/good-error-handling-aids-user-experience.md)
+	* [Good error handling aids developer experience](part-1/good-error-handling-aids-developer-experience.md)
+	* [Good error handling aids testing](part-1/good-error-handling-aids-testing.md)
+	* [Good error handling enhances and protects reputation](part-1/good-error-handling-enhances-and-protects-reputation.md)
+* [Part 2: Error handling in the JavaScript language](part-2/intro.md)
+	* [The Error constructor](part-2/the-error-constructor.md)
+	* [Built-in error constructors](part-2/built-in-error-constructors.md)
+	* [try…catch…finally](part-2/try-catch-finally.md)
+	* [The call stack](part-2/the-call-stack.md)
+	* [The throw statement](part-2/the-throw-statement.md)
+	* [Stack traces](part-2/stack-traces.md)
+	* [Custom errors](part-2/custom-errors.md)
+	* [Async error handling](part-2/async-error-handling.md)
+	* [Challenges and language design flaws](part-2/challenges-and-language-design-flaws.md)
+* [Part 3: Real world JavaScript error handling in browsers and Node.js](part-3/intro.md)
+	* [Commonalities between browsers and Node.js](part-3/commonalities-between-browsers-and-nodejs.md)
+	* [Browser peculiarities](part-3/browser-peculiarities.md)
+	* [Browser APIs](part-3/browser-apis.md)
+        * [Ecmascript modules](part-3/browser-apis/ecmascript-modules.md)
+        * [Asset loading](part-3/browser-apis/asset-loading.md)
+        * [Events and messaging](part-3/browser-apis/events-and-messaging.md)
+        * [Task scheduling](part-3/browser-apis/task-scheduling.md)
+        * [Window, Document, and Navigator](part-3/browser-apis/window-document-navigator.md)
+        * [Device](part-3/browser-apis/device.md)
+        * [DOM (HTML elements)](part-3/browser-apis/dom.md)
+        * [HTML forms](part-3/browser-apis/html-forms.md)
+        * [Web Components](part-3/browser-apis/web-components.md)
+        * [Stylesheets](part-3/browser-apis/stylesheets.md)
+        * [WebWorkers](part-3/browser-apis/web-workers.md)
+        * [Service Workers and Progressive Web Apps (PWAs)](part-3/browser-apis/service-workers.md)
+        * [Networking](part-3/browser-apis/networking.md)
+        * [Client storage](part-3/browser-apis/client-storage.md)
+        * [Data processing](part-3/browser-apis/data-processing.md)
+        * [Graphics](part-3/browser-apis/graphics.md)
+        * [Video and audio](part-3/browser-apis/video-and-audio.md)
+        * [Internationalization](part-3/browser-apis/internationalization.md)
+        * [Performance](part-3/browser-apis/performance.md)
+        * [Security](part-3/browser-apis/security.md)
+        * [WebAssembly](part-3/browser-apis/webassembly.md)
+	* [Node peculiarities](part-3/node-peculiarities.md)
+	* [Node APIs](part-3/node-apis.md)
+	* [HTTP](part-3/http.md)
+* [Part 4: Real world JavaScript error handling in web application architecture](part-4/intro.md)
+	* [When and where error handling is useful](part-4/when-and-where-error-handling-is-useful.md)
+	* [Design and strategy](part-4/design-and-strategy.md)
+	* [Tactics](part-4/tactics.md)
+		* [Missing browser or Node.js feature support](part-4/tactics/missing-browser-node-feature-support.md)
+		* [Faulty third-party packages](part-4/tactics/faulty-third-party-packages.md)
+		* [Faulty third-party dynamic embeds](part-4/tactics/faulty-third-party-dynamic-embeds.md)
+		* [Code API contract violations](part-4/tactics/code-api-contract-violations.md)
+		* [Race conditions](part-4/tactics/race-conditions.md)
+		* [Loss of network connectivity](part-4/tactics/loss-of-network-connectivity.md)
+		* [Request failure](part-4/tactics/request-failure.md)
+		* [Asset load failure](part-4/tactics/asset-load-failure.md)
+		* [Critical failure during app loading](part-4/tactics/critical-failure-during-app-loading.md)
+		* [UI component render failure](part-4/tactics/ui-component-render-failure.md)
+		* [No matching route](part-4/tactics/no-matching-route.md)
+		* [Forbidden route](part-4/tactics/forbidden-route.md)
+		* [Private browsing mode](part-4/tactics/private-browsing-mode.md)
+		* [Realtime data inconsistency](part-4/tactics/realtime-data-inconsistency.md)
+		* [Too-aggressive caching](part-4/tactics/too-aggressive-caching.md)
+		* [Too-fast input](part-4/tactics/too-fast-input.md)
+		* [Too-slow processing](part-4/tactics/too-slow-processing.md)
+		* [Client storage quota exceeded](part-4/tactics/client-storage-quota-exceeded.md)
+	* [During development](part-4/during-development.md)
+	* [During automated testing](part-4/during-automated-testing.md)
+	* [During staging and QA](part-4/during-staging-and-qa.md)
+	* [During production](part-4/during-production.md)
+* [Part 5: Complementary concepts and techniques](part-5/intro.md)
+	* [Defensive design](part-5/defensive-design.md)
+	* [Debugging](part-5/debugging.md)
+	* [Linting](part-5/linting.md)
+	* [Static typing](part-5/static-typing.md)
+	* [Automated testing and test driven development](part-5/automated-testing-and-tdd.md)
+	* [Design by contract](part-5/design-by-contract.md)
+	* [User input validation](part-5/user-input-validation.md)
+	* [Error handling using popular JS frameworks](part-5/error-handling-using-popular-frameworks.md)
+	* [Error handling using common data API paradigms](part-5/error-handling-using-common-data-api-paradigms.md)
+	* [Immutable data structures](part-5/immutable-data-structures.md)
+	* [Functional programming](part-5/functional-programming.md)
+	* [Reactive programming](part-5/reactive-programming.md)
+	* [Transactions and atomicity](part-5/transactions-and-atomicity.md)
+	* [Unidirectional data flow](part-5/unidirectional-data-flow.md)
+	* [Command and Query Responsibility Segregation (CQRS)](part-5/cqrs.md)
+	* [Twelve-factor apps](part-5/twelve-factor-apps.md)
+	* [Web performance](part-5/web-performance.md)
+	* [Web security](part-5/web-security.md)
+	* [HTML in JS](part-5/html-in-js.md)
+	* [CSS in JS](part-5/css-in-js.md)
 
-[1]:	preface.md
-[2]:    introduction.md
-[3]:	part-1/0-intro.md
-[4]:	part-1/chapter-1/0-what-exactly-is-an-error.md
-[5]:	part-1/chapter-2/0-errors-vs-exceptions-vs-maybe-bad.md
-[6]:	part-1/chapter-3/0-when-an-error-is-not-an-error.md
-[7]:	part-1/chapter-4/0-error-handling-paradigms-and-schools-of-thought.md
-[8]:	part-1/chapter-5/0-good-error-handling-aids-user-experience.md
-[9]:	part-1/chapter-6/0-good-error-handling-aids-developer-experience.md
-[10]:	part-1/chapter-7/0-good-error-handling-aids-testing.md
-[11]:	part-1/chapter-8/0-good-error-handling-enhances-and-protects-reputation.md
-[12]:	part-2/0-intro.md
-[13]:	part-2/chapter-9/0-the-error-constructor.md
-[14]:	part-2/chapter-10/0-built-in-error-constructors.md
-[15]:	part-2/chapter-11/0-try-catch-finally.md
-[16]:	part-2/chapter-12/0-the-call-stack.md
-[17]:	part-2/chapter-13/0-the-throw-statement.md
-[18]:	part-2/chapter-14/0-stack-traces.md
-[19]:	part-2/chapter-15/0-custom-errors.md
-[20]:	part-2/chapter-16/0-async-error-handling.md
-[21]:	part-2/chapter-17/0-challenges-and-language-design-flaws.md
-[22]:	part-3/0-intro.md
-[23]:	part-3/chapter-18/0-commonalities-between-browsers-and-nodejs.md
-[24]:	part-3/chapter-19/0-browser-peculiarities.md
-[25]:	part-3/chapter-20/0-browser-apis.md
-[26]:   part-3/chapter-20/ecmascript-modules.md
-[27]:   part-3/chapter-20/asset-loading.md
-[28]:   part-3/chapter-20/events-and-messaging.md
-[29]:   part-3/chapter-20/task-scheduling.md
-[30]:   part-3/chapter-20/window-document-navigator.md
-[31]:   part-3/chapter-20/device.md
-[32]:   part-3/chapter-20/dom.md
-[33]:   part-3/chapter-20/html-forms.md
-[34]:   part-3/chapter-20/web-components.md
-[35]:   part-3/chapter-20/stylesheets.md
-[36]:   part-3/chapter-20/web-workers.md
-[37]:   part-3/chapter-20/service-workers.md
-[38]:   part-3/chapter-20/networking.md
-[39]:   part-3/chapter-20/client-storage.md
-[40]:   part-3/chapter-20/data-processing.md
-[41]:   part-3/chapter-20/graphics.md
-[42]:   part-3/chapter-20/video-and-audio.md
-[43]:   part-3/chapter-20/internationalization.md
-[44]:   part-3/chapter-20/performance.md
-[45]:   part-3/chapter-20/security.md
-[46]:   part-3/chapter-20/webassembly.md
-[47]:	part-3/chapter-21/0-node-peculiarities.md
-[48]:	part-3/chapter-22/0-node-apis.md
-[49]:	part-3/chapter-23/0-http.md
-[50]:	part-4/0-intro.md
-[51]:   part-4/chapter-24/0-when-and-where-error-handling-is-useful.md
-[52]:   part-4/chapter-25/0-design-and-strategy.md
-[53]:   part-4/chapter-26/0-tactics.md
-[54]:   part-4/chapter-26/missing-browser-node-feature-support.md
-[55]:   part-4/chapter-26/faulty-third-party-packages.md
-[56]:   part-4/chapter-26/faulty-third-party-dynamic-embeds.md
-[57]:   part-4/chapter-26/code-api-contract-violations.md
-[58]:   part-4/chapter-26/race-conditions.md
-[59]:   part-4/chapter-26/loss-of-network-connectivity.md
-[60]:   part-4/chapter-26/request-failure.md
-[61]:   part-4/chapter-26/asset-load-failure.md
-[62]:   part-4/chapter-26/critical-failure-during-app-loading.md
-[63]:   part-4/chapter-26/ui-component-render-failure.md
-[64]:   part-4/chapter-26/no-matching-route.md
-[65]:   part-4/chapter-26/forbidden-route.md
-[66]:   part-4/chapter-26/private-browsing-mode.md
-[67]:   part-4/chapter-26/realtime-data-inconsistency.md
-[68]:   part-4/chapter-26/too-aggressive-caching.md
-[69]:   part-4/chapter-26/too-fast-input.md
-[70]:   part-4/chapter-26/too-slow-processing.md
-[71]:   part-4/chapter-26/client-storage-quota-exceeded.md
-[72]:	part-4/chapter-27/0-during-development.md
-[73]:	part-4/chapter-28/0-during-automated-testing.md
-[74]:	part-4/chapter-29/0-during-staging-and-qa.md
-[75]:	part-4/chapter-30/0-during-production.md
-[76]:	part-5/0-intro.md
